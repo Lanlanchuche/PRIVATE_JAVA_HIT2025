@@ -15,7 +15,7 @@ public class UserService {
         }
     }
     public static void changePassword(User user, String newPassword, String confirmNewPassword ){
-        if(confirmNewPassword.equals("1")){
+        if(confirmNewPassword.equals(newPassword)){
             user.setPassword(newPassword);
             System.out.println("Thay doi mat khau thanh cong");
         }

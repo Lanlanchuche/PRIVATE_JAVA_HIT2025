@@ -50,8 +50,6 @@ public class Main {
                                     System.out.println("Enter new password: ");
                                     String newpassword = sc.nextLine();
                                     System.out.println("Confirm new password: ");
-                                    System.out.println("1.Confirm");
-                                    System.out.println("0.Not confirm");
                                     String choice2 = sc.nextLine();
                                     UserService.changePassword(u, newpassword, choice2);
                                     break;

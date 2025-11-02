@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class AuthService extends Throwable{
+public class AuthService {
     public static List<User> list = new ArrayList<>();
     public static User login(String username, String password){
         for (User user : list){
@@ -18,7 +18,7 @@ public class AuthService extends Throwable{
         return null;
     }
     public static void register(String username, String password, String email, String phonenumber){
-        if(username == null || password == null || email == null || phonenumber == null){
+        if(username.equals("") || password.equals("") || email.equals("") || phonenumber.equals("")){
             System.out.println("Khong duoc de trong thong tin!");
         }
         else {
