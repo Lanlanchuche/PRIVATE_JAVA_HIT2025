@@ -18,6 +18,12 @@ public class AuthService {
         return null;
     }
     public static void register(String username, String password, String email, String phonenumber){
+        for  (User user : list){
+            if(user.getUsername().equals(username)){
+                System.out.println("Ten nguoi dung da ton tai");
+                return;
+            }
+        }
         if(username.equals("") || password.equals("") || email.equals("") || phonenumber.equals("")){
             System.out.println("Khong duoc de trong thong tin!");
         }
