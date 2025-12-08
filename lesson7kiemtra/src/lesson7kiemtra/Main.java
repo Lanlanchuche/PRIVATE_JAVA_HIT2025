@@ -84,6 +84,9 @@ public class Main {
                     }
                     
                     break;
+                default:
+                    System.out.println("Khong hop le");
+                    break;
               
             }
         }
